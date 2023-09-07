@@ -1,0 +1,75 @@
+.proyect-card {
+    width: 22vw;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: #EAEAEA;
+    margin: 5vh 2vw;
+    padding: 13px;
+    border-radius: 5px;
+    color: #252525;
+}
+
+.large-card {
+  width: 80vw;
+  height: 85vh;
+}
+
+.proyect-card:hover {
+    background-color: #efefef;
+    color: #000;
+    box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.proyect-card h1{
+  position: relative; /* Añade posición absoluta para el pseudo-elemento */
+}
+
+.proyect-card h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #61c0bf;
+  width: 40%;
+  transition: width 0.3s ease; 
+}
+
+.proyect-card:hover h1::after {
+  width: 100%;
+}
+
+.img-div {
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-div img {
+  object-fit: contain;
+  height: 50vh;
+}
+
+.show-code {
+  border: solid 1px transparent;
+  background-color: #61c0bf;
+  border-radius: 12px;
+  padding: 10px 30px;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 20px;
+  width: max-content;
+  font-weight: 600;
+}
+
+.show-code:hover {
+  background-color: #57a8a7;
+  border: solid 1px black;
+  cursor: pointer;
+}

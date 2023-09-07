@@ -1,0 +1,18 @@
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel img:hover {
+    cursor: auto;
+}
+
+.carousel button {
+    height: max-content;
+    border: none;
+    color: #61c0bf;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+}
